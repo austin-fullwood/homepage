@@ -1,7 +1,8 @@
-import { Card, CardContent, Divider, List, ListItem, ListItemText, Typography } from '@mui/material';
+import { Divider, List, ListItem, ListItemText, Typography } from '@mui/material';
 import { Fragment } from 'react';
+import { StatusUpdate } from '../utils/types';
 
-function StatusCard() {
+function StatusCard(props: { statusUpdate: StatusUpdate }) {
   return (
     <>
       <h1>Status</h1>

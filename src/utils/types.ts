@@ -1,7 +1,12 @@
-type Project = {
+export type Project = {
   name: string;
   description: string;
   skills: string[];
 };
 
-export default Project;
+export type StatusUpdate = {
+  title: string;
+  date: Date;
+  location: string;
+  update: string;
+};

@@ -1,5 +1,5 @@
 import { Card, CardActionArea, CardContent, Typography } from "@mui/material";
-import Project from "../utils/types";
+import { Project } from "../utils/types";
 
 function ProjectCard(props: { project: Project }) {
   return (
