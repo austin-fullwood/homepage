@@ -49,14 +49,18 @@ function Projects() {
   return (
     <>
       <Typography variant="h4">Projects</Typography>
-      {
-        projects.map((project) => (
-          <>
-            <ProjectCard project={project} />
-          </>
+      <div style={{
+        display: "flex",
+        flexWrap: "wrap",
+        alignItems: "stretch"
+      }}>
+        {
+          projects.map((project) => (
+              <ProjectCard project={project} />
+            )
           )
-        )
-      }
+        }
+      </div>
     </>
   );
 }

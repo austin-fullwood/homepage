@@ -2,7 +2,6 @@ import linkedin from "../assets/images/linkedin.png";
 import github from "../assets/images/github.png";
 import email from "../assets/images/email.png";
 import { Typography } from "@mui/material";
-import { Link } from "react-router-dom";
 
 function Footer() {
   const imageStyle = {
@@ -13,7 +12,10 @@ function Footer() {
 
   return (
     <>
-      <div style={{  backgroundColor: "#ED553B", padding: "30px 0px" }}>
+      <div style={{
+        backgroundColor: "#ED553B",
+        padding: "30px 0px"
+      }}>
         <a href="https://www.linkedin.com/in/austin-fullwood/">
           <img
               src={linkedin}
@@ -35,7 +37,7 @@ function Footer() {
               style={imageStyle}
           />
         </a>
-        <Typography>Copyright 2023 &#x2022; Austin Fullwood The Engineer</Typography>
+        <Typography>Copyright 2023 &#x2022; Austin The Engineer</Typography>
       </div>
     </>
   );

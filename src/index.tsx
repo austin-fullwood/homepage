@@ -6,6 +6,8 @@ import reportWebVitals from './reportWebVitals';
 import { Amplify } from 'aws-amplify';
 // import config from './aws-exports';
 import { BrowserRouter } from 'react-router-dom';
+import { CssBaseline, ThemeProvider } from '@mui/material';
+import { appTheme } from './themes/theme';
 
 // Amplify.configure(config);
 
@@ -15,7 +17,10 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+      <ThemeProvider theme={appTheme}>
+        <CssBaseline enableColorScheme />
+        <App />
+      </ThemeProvider>
     </BrowserRouter>
   </React.StrictMode>
 );
