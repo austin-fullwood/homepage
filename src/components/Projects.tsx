@@ -48,18 +48,15 @@ function Projects() {
   ]
   return (
     <>
-      <Routes>
-        <Typography variant="h4">Projects</Typography>
-        {
-          projects.map((project) => (
-            <>
-              <ProjectCard project={project} />
-              <Route path="*" element={<Navigate to='/' />} />
-            </>
-            )
+      <Typography variant="h4">Projects</Typography>
+      {
+        projects.map((project) => (
+          <>
+            <ProjectCard project={project} />
+          </>
           )
-        }
-      </Routes>
+        )
+      }
     </>
   );
 }

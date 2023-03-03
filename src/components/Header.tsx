@@ -1,32 +1,35 @@
-import { AppBar, Button, Typography } from "@mui/material"
-import { Link, redirect, useNavigate } from "react-router-dom";
+import { AppBar, Link, Typography } from "@mui/material"
 
 function Header() {
-  const navigate = useNavigate();
-
   return (
-    <>
-      <div style={{  backgroundColor: "#ED553B", padding: "60px 0px" }}>
-        <Typography variant="h1">
-          Austin Fullwood Homepage
-        </Typography>
-        <Typography variant="h6">
-          Because I'm Currently Homeless
-        </Typography>
+    <AppBar position="static" style={{  backgroundColor: "#ED553B" }}>
+      <div style={{margin: "0px 10%"}}>
+        <div style={{margin: "50px 0px"}}>
+          <Typography variant="h1">
+            Austin Fullwood Homepage
+          </Typography>
+          <Typography variant="h6">
+            Because I'm Currently Homeless
+          </Typography>
+        </div>
+        <div style={{
+            display: "flex",
+            justifyContent: "space-evenly",
+            margin: "10px 0px"
+          }}
+        >
+          {
+            ["Home", "Projects", "Resume"].map((name) => ( // "Contact Me", "Login", "Travel", "Status",
+              <Typography variant="h5">
+                <Link underline="none" href={`/${name.toLowerCase().replace(" ", "-")}`} sx={{color: "white", '&:hover': { color: "#3CAEA3" }}}>
+                  {name}
+                </Link>
+              </Typography>
+            ))
+          }
+        </div>
       </div>
-      <AppBar position="static" style={{ backgroundColor: "white"}}>
-          <div>
-            {
-              ["Home", "Projects", "Travel", "Status", "Resume", "Contact Me", "Login"].map((name) => (
-                // <Link to={`/${name.toLowerCase()}`} style={{textDecoration: "none", margin: "0px 20px", color: "black"}}>
-                //   {name}
-                //   </Link>
-                <Button variant="text" sx={{ margin: "0px 20px" }} onClick={() => { navigate(`/${name.toLowerCase().replace(" ", "-")}`) }}>{name}</Button>
-              ))
-            }
-          </div>
-      </AppBar>
-    </>
+    </AppBar>
   );
 }
 

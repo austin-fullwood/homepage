@@ -6,6 +6,7 @@ import Travel from './components/Travel';
 import Home from './components/Home';
 import Projects from './components/Projects';
 import Status from './components/Status';
+import Resume from './components/Resume';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
           <Route path="projects" element={<Projects />} />
           <Route path="travel" element={<Travel />} />
           <Route path="status" element={<Status />} />
+          <Route path="resume" element={<Resume />} />
           <Route path="*" element={<Navigate to='/' />} />
         </Routes>
       </div>
