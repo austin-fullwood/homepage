@@ -1,0 +1,52 @@
+.component {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 30px auto;
+  justify-content: center;
+}
+
+.leftContainer {
+  margin: auto;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.meImage {
+  border-radius: 50%;
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+}
+
+.arrowMeImage {
+  width: 30%;
+  height: auto;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.rightContainer {
+  margin: auto;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (min-width: 1204px) {
+  .component {
+    flex-direction: row;
+    gap: 100px;
+  }
+
+  .rightContainer {
+    margin: auto 0px;
+  }
+
+  .leftContainer {
+    margin: auto 0px;
+  }
+}

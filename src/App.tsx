@@ -6,7 +6,7 @@ import Travel from './components/Travel';
 import Home from './components/Home';
 import Projects from './components/Projects';
 import Status from './components/Status';
-import Resume from './components/Resume';
+import Resume from './components/Resume/Resume';
 
 function App() {
 
@@ -14,7 +14,7 @@ function App() {
     <div className="App">
       <Header />
 
-      <div style={{ margin: "20px 10%" }}>
+      <div style={{ margin: "20px calc(8px + 1.5625vw)" }}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="home" element={<Navigate to='/' />} />

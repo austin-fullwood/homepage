@@ -8,6 +8,7 @@ function Projects() {
     {
       name: "Omnia",
       description: "Cool things",
+      date: new Date(),
       skills: [
         "MongoDB",
         "NodeJS (JavaScript)",
@@ -19,6 +20,7 @@ function Projects() {
       name: "Robotic Arm",
       description: "3D printed robotic arm designed in Solidworks and" +
                    "controlled via Arduino board that communicated with a Python Program",
+      date: new Date(),
       skills: [
         "Solidworks",
         "C (Arduino Board)",
@@ -28,6 +30,7 @@ function Projects() {
     {
       name: "Stock Trader",
       description: "Attempted to predict the value of a stock and trade it.",
+      date: new Date(),
       skills: [
         "Python",
         "Numpy",
@@ -38,6 +41,7 @@ function Projects() {
     {
       name: "Titanic",
       description: "First Kaggle challenge. Managed to score 75.36% using random forest.",
+      date: new Date(),
       skills: [
         "Python",
         "Numpy",
@@ -47,21 +51,20 @@ function Projects() {
     }
   ]
   return (
-    <>
-      <Typography variant="h4">Projects</Typography>
-      <div style={{
-        display: "flex",
-        flexWrap: "wrap",
-        alignItems: "stretch"
-      }}>
-        {
-          projects.map((project) => (
-              <ProjectCard project={project} />
-            )
+    <div style={{
+      display: "flex",
+      flexWrap: "wrap",
+      justifyContent: "space-evenly",
+      alignItems: "stretch",
+      margin: "auto"
+    }}>
+      {
+        projects.map((project) => (
+            <ProjectCard project={project} />
           )
-        }
-      </div>
-    </>
+        )
+      }
+    </div>
   );
 }
 

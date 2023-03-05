@@ -48,19 +48,4 @@ function StatusCard(props: { statusUpdate: StatusUpdate }) {
     </>
   );
 }
-
-{/* <Card sx={{ minWidth: 275, backgroundColor: "#F6D55C" }}>
-<CardContent>
-  <Typography variant="h5" component="div">
-    January 31st, 2023
-  </Typography>
-  <Typography variant="body1">
-    Status: &#127968;&#10060; (Homeless)
-  </Typography>
-  <Typography variant="body2">
-    Officially moved out of my apartment in Arlington, VA today, so if you need me, I'll be living at home. #killingit
-  </Typography>
-</CardContent>
-</Card> */}
-
 export default StatusCard;

@@ -7,7 +7,8 @@ function Footer() {
   const imageStyle = {
     margin: "15px 10px",
     width: 50,
-    height: 50
+    height: 50,
+    borderRadius: "50%"
   };
 
   return (

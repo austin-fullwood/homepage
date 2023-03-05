@@ -1,5 +1,6 @@
 export type Project = {
   name: string;
+  date: Date;
   description: string;
   skills: string[];
 };
