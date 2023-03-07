@@ -17,7 +17,7 @@ function Home() {
       <div className={styles.rightContainer}>
         <div>
           <Typography variant="h4">
-            Sup my dude! Thanks for swinging by!
+            Thanks for swinging by!
           </Typography>
           <Typography variant="body1">
             Website is currently (kinda always) in progress, but enjoy the current iteration. <br/>
